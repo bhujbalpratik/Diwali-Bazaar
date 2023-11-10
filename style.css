@@ -42,3 +42,21 @@
     font-size: 30px;
     margin-left: 30px;
 }
+
+#SweetsHamper-bg {
+    background-image: url(Assets/Redbaground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#PoojaPack-bg {
+    background-image: url(Assets/YellowBackground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#FireworksCombo-bg {
+    background-image: url(Assets/FireworksBackground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

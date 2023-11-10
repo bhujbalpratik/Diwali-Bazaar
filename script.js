@@ -1,3 +1,4 @@
+// Responsive Script
 if (window.matchMedia("(max-width: 768px)").matches) {
     document.getElementById('offcanvasDarkNavbar').classList.add("w-75");
     var leg = document.querySelectorAll('.carousel_img');
@@ -8,7 +9,10 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 
 } else {
     document.getElementById('searchinput').style.width = "700px";
-    document.querySelector('.hr-img').classList.add("w-25");
+    var hrimg = document.querySelectorAll('.hr-img');
+    for (let i = 0; i < hrimg.length; i++) {
+        document.querySelectorAll('.hr-img')[i].classList.add("w-25");
+    }
     var leg = document.querySelectorAll('.carousel_img');
     for (let i = 0; i < leg.length; i++) {
         document.querySelectorAll('.carousel_img')[i].setAttribute("height", "600px");
@@ -16,5 +20,8 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     }
 
 }
+
+// Responsive Script
+
 
 
