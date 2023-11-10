@@ -25,6 +25,10 @@
     font-family: cursive;
 }
 
+.navbar-brand {
+    font-family: cursive;
+}
+
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -37,6 +41,11 @@
     border-radius: 30px;
 }
 
+.carousel-img-md {
+    border: 2px solid #FEBD69;
+    border-radius: 70px 0px 70px 0px;
+}
+
 .txt-gold {
     color: #FEBD69;
     font-size: 30px;
@@ -44,13 +53,13 @@
 }
 
 #SweetsHamper-bg {
-    background-image: url(Assets/Redbaground.png);
+    background-image: url(Assets/SweetsBackground.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #PoojaPack-bg {
-    background-image: url(Assets/YellowBackground.png);
+    background-image: url(Assets/PoojaBackground.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
