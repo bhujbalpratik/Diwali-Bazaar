@@ -48,7 +48,7 @@
                                 <a class="nav-link active" href="#"><i class="fa fa-home"></i> Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="about.html">&nbsp;<i class="fa fa-info"></i> &nbsp;About</a>
+                                <a class="nav-link" href="about.html">&nbsp;<i class="fa fa-info"></i> &nbsp;About</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -57,7 +57,7 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-light">
                                     <li><a class="dropdown-item" href="diwaliSweets.html">Diwali Sweets</a></li>
-                                    <li><a class="dropdown-item" href="diwaliLights.html">Diwali Lights</a></li>
+                                    <li><a class="dropdown-item" href="diwaliDecore.html">Diwali Decore</a></li>
                                     <li><a class="dropdown-item" href="diwaliPooja.html">Diwali Pooja Collection</a>
                                     </li>
                                     <li>
@@ -68,16 +68,20 @@
                             </li>
                             <hr class="divider">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i> &nbsp;My Cart</a>
+                                <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i>
+                                    &nbsp;My Cart <span class="badge text-bg-danger rounded-circle d-none"
+                                        id="sm-cart">0</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="fa fa-shopping-basket"></i> &nbsp;My Orders</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-heart"></i> &nbsp;My Wishlist</a>
+                                <a class="nav-link" href="#"><i class="fa fa-heart"></i> &nbsp;My Wishlist <span
+                                        class="badge text-bg-danger rounded-circle d-none" id="wishlist">0</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> &nbsp;<i class="fa fa-user"></i> &nbsp;My Account</a>
+                                <a class="nav-link" href="MyAccount.html"> &nbsp;<i class="fa fa-user"></i> &nbsp;My
+                                    Account</a>
                             </li>
                             <hr class="divider">
                             <li class="nav-item">
@@ -91,7 +95,8 @@
                                     Policy</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> &nbsp;<i class="fa fa-phone"></i> &nbsp;Contact Us</a>
+                                <a class="nav-link" href="contact.html"> &nbsp;<i class="fa fa-phone"></i> &nbsp;Contact
+                                    Us</a>
                             </li>
                         </ul>
 
@@ -100,7 +105,7 @@
             </div>
         </nav>
     </div>
-    <!-- Navbar  -->
+    <!-- Navbar Mobile -->
 
     <!-- Navbar Desktop -->
     <div class="d-lg-block d-none">
@@ -142,13 +147,14 @@
                                     <i class="fa fa-shopping-bag txt-gold"></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-light">
-                                    <li><a class="dropdown-item" href="#">Diwali Sweets</a></li>
-                                    <li><a class="dropdown-item" href="#">Diwali Lights</a></li>
-                                    <li><a class="dropdown-item" href="#">Diwali Pooja Collection</a></li>
+                                    <li><a class="dropdown-item" href="diwaliSweets.html">Diwali Sweets</a></li>
+                                    <li><a class="dropdown-item" href="diwaliDecore.html">Diwali Decore</a></li>
+                                    <li><a class="dropdown-item" href="diwaliPooja.html">Diwali Pooja Collection</a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Diwali Fireworks</a></li>
+                                    <li><a class="dropdown-item" href="diwaliFireworks.html">Diwali Fireworks</a></li>
                                 </ul>
                             </li>
                             <hr class="divider">
@@ -158,7 +164,8 @@
                                     <i class="fa fa-user txt-gold"></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-light">
-                                    <li><a class="dropdown-item" href="#">&nbsp;<i class="fa fa-user"></i> &nbsp;My
+                                    <li><a class="dropdown-item" href="MyAccount.html">&nbsp;<i class="fa fa-user"></i>
+                                            &nbsp;My
                                             Account</a></li>
                                     <li><a class="dropdown-item" href="#"><i class="fa fa-shopping-basket"></i> &nbsp;My
                                             Orders</a></li>
@@ -167,18 +174,26 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa fa-hand-stop-o"></i> Help &
+                                    <li><a class="dropdown-item" href="Help&support.html"><i
+                                                class="fa fa-hand-stop-o"></i>
+                                            Help &
                                             Support</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> &nbsp;Privacy &
+                                    <li><a class="dropdown-item" href="privacy&policy.html"><i class="fa fa-lock"></i>
+                                            &nbsp;Privacy &
                                             Policy</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa fa-phone"></i> &nbsp;Contact
+                                    <li><a class="dropdown-item" href="contact.html"><i class="fa fa-phone"></i>
+                                            &nbsp;Contact
                                             Us</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-shopping-cart txt-gold"
-                                        title="My Cart"></i></a>
+                                <a class="nav-link position-relative" href="#"><i class="fa fa-shopping-cart txt-gold"
+                                        title="My Cart"></i><span
+                                        class="position-absolute top-1 start-100 translate-middle badge rounded-pill bg-danger d-none"
+                                        id="md-cart">
+                                        0
+                                    </span></a>
                             </li>
                         </ul>
 
@@ -304,7 +319,7 @@
                             <div class="row">
                                 <div class="col-6 justify-content-start">
                                     <a href="#" class="btn btn-block btn-danger justify-content-start d-block">Order
-                                        Online</a>
+                                    </a>
                                 </div>
                                 <div class="col-6 justify-content-end">
                                     <a href="#" class="btn btn-block btn-danger justify-content-end d-block">MORE</a>
@@ -324,7 +339,7 @@
                             <div class="row">
                                 <div class="col-6 justify-content-start">
                                     <a href="#" class="btn btn-block btn-danger justify-content-start d-block">Order
-                                        Online</a>
+                                    </a>
                                 </div>
                                 <div class="col-6 justify-content-end">
                                     <a href="#" class="btn btn-block btn-danger justify-content-end d-block">MORE</a>
@@ -344,7 +359,7 @@
                             <div class="row">
                                 <div class="col-6 justify-content-start">
                                     <a href="#" class="btn btn-block btn-danger justify-content-start d-block">Order
-                                        Online</a>
+                                    </a>
                                 </div>
                                 <div class="col-6 justify-content-end">
                                     <a href="#" class="btn btn-block btn-danger justify-content-end d-block">MORE</a>
@@ -384,7 +399,7 @@
                             <div class="row">
                                 <div class="col-6 justify-content-start">
                                     <a href="#" class="btn btn-block btn-danger justify-content-start d-block">Order
-                                        Online</a>
+                                    </a>
                                 </div>
                                 <div class="col-6 justify-content-end">
                                     <a href="#" class="btn btn-block btn-danger justify-content-end d-block">MORE</a>
@@ -404,7 +419,7 @@
                             <div class="row">
                                 <div class="col-6 justify-content-start">
                                     <a href="#" class="btn btn-block btn-danger justify-content-start d-block">Order
-                                        Online</a>
+                                    </a>
                                 </div>
                                 <div class="col-6 justify-content-end">
                                     <a href="#" class="btn btn-block btn-danger justify-content-end d-block">MORE</a>
@@ -424,7 +439,7 @@
                             <div class="row">
                                 <div class="col-6 justify-content-start">
                                     <a href="#" class="btn btn-block btn-danger justify-content-start d-block">Order
-                                        Online</a>
+                                    </a>
                                 </div>
                                 <div class="col-6 justify-content-end">
                                     <a href="#" class="btn btn-block btn-danger justify-content-end d-block">MORE</a>
@@ -464,7 +479,7 @@
                             <div class="row">
                                 <div class="col-6 justify-content-start">
                                     <a href="#" class="btn btn-block btn-danger justify-content-start d-block">Order
-                                        Online</a>
+                                    </a>
                                 </div>
                                 <div class="col-6 justify-content-end">
                                     <a href="#" class="btn btn-block btn-danger justify-content-end d-block">MORE</a>
@@ -484,7 +499,7 @@
                             <div class="row">
                                 <div class="col-6 justify-content-start">
                                     <a href="#" class="btn btn-block btn-danger justify-content-start d-block">Order
-                                        Online</a>
+                                    </a>
                                 </div>
                                 <div class="col-6 justify-content-end">
                                     <a href="#" class="btn btn-block btn-danger justify-content-end d-block">MORE</a>
@@ -504,7 +519,7 @@
                             <div class="row">
                                 <div class="col-6 justify-content-start">
                                     <a href="#" class="btn btn-block btn-danger justify-content-start d-block">Order
-                                        Online</a>
+                                    </a>
                                 </div>
                                 <div class="col-6 justify-content-end">
                                     <a href="#" class="btn btn-block btn-danger justify-content-end d-block">MORE</a>
@@ -580,6 +595,7 @@
 
 
     <script src="script.js"></script>
+    <script src="productScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

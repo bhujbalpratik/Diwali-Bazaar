@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Diwali Sweets</title>
+    <title>Decorations</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -40,15 +40,15 @@
             display: block;
         }
 
-        #Mithai {
+        #Diyas {
             display: none;
         }
 
-        #DryFruits {
+        #Lights {
             display: none
         }
 
-        #Choclates {
+        #Torans {
             display: none
         }
     </style>
@@ -93,8 +93,8 @@
                                     <i class="fa fa-shopping-bag"></i> Products
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-light">
-                                    <li><a class="dropdown-item active" href="#">Diwali Sweets</a></li>
-                                    <li><a class="dropdown-item" href="diwaliDecore.html">Diwali Decore</a></li>
+                                    <li><a class="dropdown-item" href="diwaliSweets.html">Diwali Sweets</a></li>
+                                    <li><a class="dropdown-item active" href="#">Diwali Decore</a></li>
                                     <li><a class="dropdown-item" href="diwaliPooja.html">Diwali Pooja Collection</a>
                                     </li>
                                     <li>
@@ -185,8 +185,8 @@
                                     <i class="fa fa-shopping-bag txt-gold"></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-light">
-                                    <li><a class="dropdown-item active" href="#">Diwali Sweets</a></li>
-                                    <li><a class="dropdown-item" href="diwaliDecore.html">Diwali Decore</a></li>
+                                    <li><a class="dropdown-item" href="diwaliSweets.html">Diwali Sweets</a></li>
+                                    <li><a class="dropdown-item active" href="#">Diwali Decore</a></li>
                                     <li><a class="dropdown-item" href="diwaliPooja.html">Diwali Pooja Collection</a>
                                     </li>
                                     <li>
@@ -248,20 +248,19 @@
         <div class="row mt-3">
             <div class="col-md-3 col-6 mt-3 text-center">
                 <button class="btn btn-outline-warning btn-lg text-dark" id="btnProduct1"
-                    onclick="display(Mithai,DryFruits,Choclates,ViewAll,btnProduct1,btnProduct2,btnProduct3,btnProduct4)">Mithai</button>
+                    onclick="display(Diyas,Lights,Torans,ViewAll,btnProduct1,btnProduct2,btnProduct3,btnProduct4)">Diyas</button>
             </div>
             <div class="col-md-3 col-6 mt-3 text-center">
                 <button class="btn btn-outline-warning btn-lg text-dark" id="btnProduct2"
-                    onclick="display(DryFruits,Mithai,Choclates,ViewAll,btnProduct2,btnProduct1,btnProduct3,btnProduct4)">Dry
-                    Fruits</button>
+                    onclick="display(Lights,Diyas,Torans,ViewAll,btnProduct2,btnProduct1,btnProduct3,btnProduct4)">Lights</button>
             </div>
             <div class="col-md-3 col-6 mt-3 text-center">
                 <button class="btn btn-outline-warning btn-lg text-dark" id="btnProduct3"
-                    onclick="display(Choclates,DryFruits,Mithai,ViewAll,btnProduct3,btnProduct1,btnProduct2,btnProduct4)">Choclates</button>
+                    onclick="display(Torans,Diyas,Lights,ViewAll,btnProduct3,btnProduct1,btnProduct2,btnProduct4)">Torans</button>
             </div>
             <div class="col-md-3 col-6 mt-3 text-center">
                 <button class="btn btn-outline-warning btn-lg text-dark" id="btnProduct4"
-                    onclick="display(ViewAll,Mithai,Choclates,DryFruits,btnProduct4,btnProduct1,btnProduct2,btnProduct3)">View
+                    onclick="display(ViewAll,Diyas,Lights,Torans,btnProduct4,btnProduct1,btnProduct2,btnProduct3)">View
                     All</button>
             </div>
         </div>
@@ -269,194 +268,12 @@
             <div class="row mt-5">
                 <div class="col-md-4 mt-4">
                     <div class="card position-relative">
-                        <img src="Assets/Diwali Sweets/Mithai_1.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Diyas_1.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Rich Milk Cake</h5>
-                            <h5 class="float-end">&#8377; 595</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_2.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Choco Coated Almonds</h5>
-                            <h5 class="float-end">&#8377; 399</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_3.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Nutty Delight Choclate</h5>
-                            <h5 class="float-end">&#8377; 299</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_4.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Desi Ghee Besan Laddo</h5>
-                            <h5 class="float-end">&#8377; 545</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_5.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Coated Almonds</h5>
-                            <h5 class="float-end">&#8377; 399</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_6.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Clandiz Choclate Cookies</h5>
-                            <h5 class="float-end">&#8377; 595</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_7.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Soan Papdai</h5>
-                            <h5 class="float-end">&#8377; 299</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_8.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Cashes & Almonds</h5>
-                            <h5 class="float-end">&#8377; 390</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_9.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Gaurmet Choclate Truffle</h5>
-                            <h5 class="float-end">&#8377; 499</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="Mithai">
-            <div class="row mt-5">
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_1.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Rich Milk Cake</h5>
-                            <h5 class="float-end">&#8377; 595</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_2.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Kaju Katli</h5>
-                            <h5 class="float-end">&#8377; 499</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_3.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Dodha Barfi</h5>
+                            <h5 class="float-start">Swastik Design Diya</h5>
                             <h5 class="float-end">&#8377; 495</h5>
                         </div>
                         <div class="card-footer border-0">
@@ -467,28 +284,12 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_4.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Lights_2.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Desi Ghee Besan Laddu</h5>
-                            <h5 class="float-end">&#8377; 545</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_5.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Assorted Dry Fruit Mithai</h5>
+                            <h5 class="float-start">Hanging Diya T-Light</h5>
                             <h5 class="float-end">&#8377; 399</h5>
                         </div>
                         <div class="card-footer border-0">
@@ -499,28 +300,12 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_6.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Torans_3.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Divine Dry Fruit Mithai</h5>
-                            <h5 class="float-end">&#8377; 499</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_7.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Soan Papdai</h5>
+                            <h5 class="float-start">Handmade Gota Patti Toran</h5>
                             <h5 class="float-end">&#8377; 299</h5>
                         </div>
                         <div class="card-footer border-0">
@@ -531,146 +316,12 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_8.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Diyas_4.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Coconut Barfi</h5>
-                            <h5 class="float-end">&#8377; 399</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Mithai_9.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Moong Dal Barfi</h5>
-                            <h5 class="float-end">&#8377; 499</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="DryFruits">
-            <div class="row mt-5">
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_1.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Cashews & Almonds</h5>
-                            <h5 class="float-end">&#8377; 420</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_2.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Choco Coated Almonds</h5>
-                            <h5 class="float-end">&#8377; 399</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_3.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Dry Fruit Mix 1</h5>
-                            <h5 class="float-end">&#8377; 599</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_4.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Dry Fruit Mix 2</h5>
-                            <h5 class="float-end">&#8377; 599</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_5.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Coated Almonds</h5>
-                            <h5 class="float-end">&#8377; 399</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_6.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Dry Fruit Mix 3</h5>
-                            <h5 class="float-end">&#8377; 595</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_7.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Coated Dry Fruit Mix </h5>
+                            <h5 class="float-start">Eco-friendly Diya</h5>
                             <h5 class="float-end">&#8377; 395</h5>
                         </div>
                         <div class="card-footer border-0">
@@ -681,12 +332,60 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_8.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Lights_5.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Cashes & Almonds</h5>
+                            <h5 class="float-start">Nritya Ganpati LED</h5>
+                            <h5 class="float-end">&#8377; 399</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_6.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Floral Patch Toran</h5>
+                            <h5 class="float-end">&#8377; 595</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Diyas_7.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Lotus Design Diya</h5>
+                            <h5 class="float-end">&#8377; 299</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Lights_3.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Ganesha Wooden Base LED</h5>
                             <h5 class="float-end">&#8377; 390</h5>
                         </div>
                         <div class="card-footer border-0">
@@ -697,13 +396,13 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/DryFruits_9.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Torans_9.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Mix Dry Fruit</h5>
-                            <h5 class="float-end">&#8377; 399</h5>
+                            <h5 class="float-start">Embellished Toran</h5>
+                            <h5 class="float-end">&#8377; 499</h5>
                         </div>
                         <div class="card-footer border-0">
                             <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
@@ -715,17 +414,17 @@
             </div>
         </div>
 
-        <div id="Choclates">
+        <div id="Diyas">
             <div class="row mt-5">
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_1.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Diyas_1.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Almond Dragees Choclate Bomb</h5>
-                            <h5 class="float-end">&#8377; 599</h5>
+                            <h5 class="float-start">Swastik Design Diya</h5>
+                            <h5 class="float-end">&#8377; 495</h5>
                         </div>
                         <div class="card-footer border-0">
                             <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
@@ -735,12 +434,76 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_2.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Diyas_2.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Assorted Choclate Bar</h5>
+                            <h5 class="float-start">Hand Painted Clay Diyas</h5>
+                            <h5 class="float-end">&#8377; 545</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Diyas_3.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Metallic Painted Diyas</h5>
+                            <h5 class="float-end">&#8377; 495</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Diyas_4.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Eco-friendly Diya</h5>
+                            <h5 class="float-end">&#8377; 395</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Diyas_5.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Chandrakala Hanging Diyas</h5>
+                            <h5 class="float-end">&#8377; 756</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Diyas_6.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Temple Shape Diya</h5>
                             <h5 class="float-end">&#8377; 499</h5>
                         </div>
                         <div class="card-footer border-0">
@@ -751,13 +514,13 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_3.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Diyas_7.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Nutty Delight Choclate</h5>
-                            <h5 class="float-end">&#8377; 299</h5>
+                            <h5 class="float-start">Lotus Design Diya</h5>
+                            <h5 class="float-end">&#8377; 395</h5>
                         </div>
                         <div class="card-footer border-0">
                             <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
@@ -767,76 +530,12 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_4.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Diyas_8.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Dark Divine Choclate</h5>
-                            <h5 class="float-end">&#8377; 499</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_5.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Belgian Dark Choclate</h5>
-                            <h5 class="float-end">&#8377; 595</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_6.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Clandiz Choclate Cookies</h5>
-                            <h5 class="float-end">&#8377; 595</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_7.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">Waffle Choclate Cookies</h5>
-                            <h5 class="float-end">&#8377; 595</h5>
-                        </div>
-                        <div class="card-footer border-0">
-                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
-                            <button class="btn btn-success float-end">BUY</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_8.jpg" alt="" class="img-fluid">
-                        <button class="wishlist-icon" onclick="addToWishlist(this)">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <div class="card-body">
-                            <h5 class="float-start">PeanutButter Choclate</h5>
+                            <h5 class="float-start">Elegant Lotus Diyas</h5>
                             <h5 class="float-end">&#8377; 399</h5>
                         </div>
                         <div class="card-footer border-0">
@@ -847,12 +546,264 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card">
-                        <img src="Assets/Diwali Sweets/Choclates_9.jpg" alt="" class="img-fluid">
+                        <img src="Assets/Diwali Decore/Diyas_9.jpg" alt="" class="img-fluid">
                         <button class="wishlist-icon" onclick="addToWishlist(this)">
                             <i class="fa fa-heart"></i>
                         </button>
                         <div class="card-body">
-                            <h5 class="float-start">Gaurmet Choclate Truffle</h5>
+                            <h5 class="float-start">Metal Thathera Diyas</h5>
+                            <h5 class="float-end">&#8377; 499</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="Lights">
+            <div class="row mt-5">
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Lights_1.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Wall Hanging Tea Light </h5>
+                            <h5 class="float-end">&#8377; 420</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Lights_2.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Hanging Diya T-Light</h5>
+                            <h5 class="float-end">&#8377; 399</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Lights_3.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Ganesha Wooden Base LED</h5>
+                            <h5 class="float-end">&#8377; 599</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Lights_4.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Lantern With LED String Light</h5>
+                            <h5 class="float-end">&#8377; 599</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Lights_5.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Nritya Ganpati LED</h5>
+                            <h5 class="float-end">&#8377; 399</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Lights_6.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Off-White Lantern</h5>
+                            <h5 class="float-end">&#8377; 595</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="Torans">
+            <div class="row mt-5">
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_1.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Festive Toran</h5>
+                            <h5 class="float-end">&#8377; 599</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_2.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Colorful Pompom Toran</h5>
+                            <h5 class="float-end">&#8377; 499</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_3.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Handmade Gota Patti Toran</h5>
+                            <h5 class="float-end">&#8377; 299</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_4.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Gota Patti Embroited</h5>
+                            <h5 class="float-end">&#8377; 499</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_5.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Jasmine Flower Design</h5>
+                            <h5 class="float-end">&#8377; 595</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_6.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Floral Patch Toran</h5>
+                            <h5 class="float-end">&#8377; 595</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_7.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Floral Gota Patti Toran</h5>
+                            <h5 class="float-end">&#8377; 595</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_8.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Golden Beads Toran</h5>
+                            <h5 class="float-end">&#8377; 399</h5>
+                        </div>
+                        <div class="card-footer border-0">
+                            <button class="btn btn-warning float-start" onclick="AddtoCart(this);">Add To Cart</button>
+                            <button class="btn btn-success float-end">BUY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <img src="Assets/Diwali Decore/Torans_9.jpg" alt="" class="img-fluid">
+                        <button class="wishlist-icon" onclick="addToWishlist(this)">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <div class="card-body">
+                            <h5 class="float-start">Embellished Toran</h5>
                             <h5 class="float-end">&#8377; 499</h5>
                         </div>
                         <div class="card-footer border-0">
@@ -886,8 +837,8 @@
             <div class="col-6 col-md">
                 <h5>Products</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Diwali Sweeets</a></li>
-                    <li><a class="text-muted" href="diwaliDecore.html">Diwali Decore</a></li>
+                    <li><a class="text-muted" href="diwaliSweets.html">Diwali Sweeets</a></li>
+                    <li><a class="text-muted" href="#">Diwali Decore</a></li>
                     <li><a class="text-muted" href="diwaliPooja.html">Diwali Pooja Collection</a></li>
                     <li><a class="text-muted" href="diwaliFireworks.html">Diwali Fireworks</a></li>
                 </ul>
